@@ -98,13 +98,13 @@ public class UtilityClass {
 		return data;
 	}
 	
-	/*//Screenshot
+	//Screenshot
 	public String TakeScreenshot(String name) throws IOException
 	{
-		String path = "C:\\Users\\USER\\Desktop\\GuviMini\\Capstone_BestBuy\\Screenshots\\"+name+".png";
+		String path = "C:\\Users\\USER\\Desktop\\GuviMini\\Capstone_Spicejet\\Screenshots\\"+name+".png";
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File dest = new File(path);
 		FileUtils.copyFile(source, dest);
 		return path;
-	}*/
+	}
 }

@@ -3,15 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="Chrome"/>
   <parameter name="url" value="https://www.spicejet.com/"/>
+  <listeners>
+    <listener class-name="utils.Listener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.TC005_CheckIn">
+      <class name="test.TC007_ManageBookings">
         <methods>
-          <include name="CheckInTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="LaunchBrowser"/>
+          <include name="ViewChangeAssistTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.TC005_CheckIn -->
+      </class> <!-- test.TC007_ManageBookings -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,9 @@
 package pages;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -54,8 +57,9 @@ public class HomePage extends ProjectSpecificationMethods {
 	@FindBy(xpath = "//div[contains(@class,' r-1loqt21 r-18u37iz r-1777fci r-1w50u8q')]") WebElement FlightStatusSearchFlight;
 	@FindBy(xpath = "//div[@data-testid='manage booking-horizontal-nav-tabs']") WebElement ManageBookings;
 	@FindBy(xpath = "//div[text()='You don’t have any upcoming trips']") WebElement NoTripMsg;
-	@FindBy(xpath = "//div[text()='Add Your Itinerary']") WebElement AddYourItenary;
-	@FindBy(xpath = "//div[text()='View Upcoming Trips']") WebElement ViewUpcomingTrips;
+	@FindBy(xpath = "//div[contains(@class,'r-rs99b7 r-1loqt21 r-18u37iz r-1777fci r-15d164r')]") WebElement AddYourItenary;
+	@FindBy(xpath = "//div[contains(@class,'r-rs99b7 r-1loqt21 r-18u37iz r-1777fci')]") WebElement ViewUpcomingTrips;
+	@FindBy(xpath = "(//div[contains(@class,'r-1loqt21 r-18u37iz r-1777fci r-1w50u8q')])[2]") WebElement ViewChangeAssist;
 	
 	
 	public SignUpPage clickSignUp()
@@ -264,15 +268,16 @@ public class HomePage extends ProjectSpecificationMethods {
 	
 	public void clickAddYourItenary()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.elementToBeClickable(AddYourItenary));
 		AddYourItenary.click();
 	}
 	
 	public void clickViewUpcomingTrips()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.elementToBeClickable(ViewUpcomingTrips));
 		ViewUpcomingTrips.click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(NoTripMsg));
 		String actual = NoTripMsg.getText();
 		String expected = "You don’t have any upcoming trips";
@@ -280,16 +285,17 @@ public class HomePage extends ProjectSpecificationMethods {
 		sassert.assertAll();
 	}
 	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-
+	public void clickViewChangeAssist() throws InterruptedException
+	{
+		ViewChangeAssist.click();
+		Thread.sleep(5000);
+			driver.getWindowHandle();
+			Set<String> handles = driver.getWindowHandles(); 
+			List<String> list = new ArrayList<>(handles);
+			driver.switchTo().window(list.get(1));
+			String actual = driver.getTitle();
+			String expected = "Domestic Airlines in India, Cheap Air Tickets India, International Air Tickets Booking | SpiceJet Airlines";
+			sassert.assertEquals(actual, expected);
+			sassert.assertAll();
+	}
 }
