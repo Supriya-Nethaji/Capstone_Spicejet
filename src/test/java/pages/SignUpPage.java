@@ -11,7 +11,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.internal.invokers.AbstractParallelWorker.Arguments;
 
 import base.ProjectSpecificationMethods;
 
@@ -78,9 +77,8 @@ public class SignUpPage extends ProjectSpecificationMethods {
 	
 	public SignUpPage enterMobileNumber(String MobNum)
 	{
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();",mobileNumber);
-		mobileNumber.sendKeys(MobNum);
+		Actions act = new Actions(driver);
+		act.moveToElement(mobileNumber).sendKeys(MobNum).perform();
 		return this;
 	}
 	

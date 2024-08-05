@@ -8,13 +8,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.TC007_ManageBookings">
+      <class name="test.TC001_SignUp">
         <methods>
-          <include name="setUp"/>
           <include name="LaunchBrowser"/>
-          <include name="ViewChangeAssistTest" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="SignUpTest" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- test.TC007_ManageBookings -->
+      </class> <!-- test.TC001_SignUp -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -8,13 +8,13 @@
 <parameter name="browser" value="Chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-     <!-- <class name="test.TC001_SignUp"/>-->
+    <!--  <class name="test.TC001_SignUp"/> -->
       <class name="test.TC002_Login"/> 
       <class name="test.TC003_OneWayTrip"/> 
       <class name="test.TC004_RoundTrip"/>
       <class name="test.TC005_CheckIn"/>
-    <class name="test.TC006_FlightStatus"/>
-     <class name="test.TC007_ManageBookings"/>
+      <class name="test.TC006_FlightStatus"/>
+      <class name="test.TC007_ManageBookings"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

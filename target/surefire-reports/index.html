@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\USER\Desktop\GuviMini\Capstone_Spicejet\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 4 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC007_ManageBookings" class="method navigator-link" hash-for-method="AddToItenaryTest(9042281169, Nethaji@28, valid)">AddToItenaryTest(9042281169, Nethaji@28, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_OneWayTrip" class="method navigator-link" hash-for-method="OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)">OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC004_RoundTrip" class="method navigator-link" hash-for-method="RoundTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)">RoundTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC007_ManageBookings" class="method navigator-link" hash-for-method="ViewChangeAssistTest(9042281169, Nethaji@28, valid)">ViewChangeAssistTest(9042281169, Nethaji@28, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC005_CheckIn" class="method navigator-link" hash-for-method="CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, supriyapalani28@gmail.com, valid)">CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, supriyapalani28@gmail.com, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC005_CheckIn" class="method navigator-link" hash-for-method="CheckInTest(9042281169, Nethaji@28, valid, , , Invalid)">CheckInTest(9042281169, Nethaji@28, valid, , , Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC005_CheckIn" class="method navigator-link" hash-for-method="CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, , BlankEmail)">CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, , BlankEmail)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC005_CheckIn" class="method navigator-link" hash-for-method="CheckInTest(9042281169, Nethaji@28, valid, , supriyapalani28@gmail.com, BlankTicket)">CheckInTest(9042281169, Nethaji@28, valid, , supriyapalani28@gmail.com, BlankTicket)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC006_FlightStatus" class="method navigator-link" hash-for-method="FlightStatusTest(9042281169, Nethaji@28, valid)">FlightStatusTest(9042281169, Nethaji@28, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC002_Login" class="method navigator-link" hash-for-method="Logintest(9042281169, Nethaji@28, valid)">Logintest(9042281169, Nethaji@28, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC002_Login" class="method navigator-link" hash-for-method="Logintest(9042281169, 452156, InvalidPwd)">Logintest(9042281169, 452156, InvalidPwd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC002_Login" class="method navigator-link" hash-for-method="Logintest(, &#039;&#039;, BlankMob)">Logintest(, '', BlankMob)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC002_Login" class="method navigator-link" hash-for-method="Logintest(98656, Nethaji@28, InvalidMobile)">Logintest(98656, Nethaji@28, InvalidMobile)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC002_Login" class="method navigator-link" hash-for-method="Logintest(9865652536, 1234, Invalid)">Logintest(9865652536, 1234, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC007_ManageBookings" class="method navigator-link" hash-for-method="ManageBookingsTest(9042281169, Nethaji@28, valid)">ManageBookingsTest(9042281169, Nethaji@28, valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_OneWayTrip" class="method navigator-link" hash-for-method="OneWayTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)">OneWayTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_OneWayTrip" class="method navigator-link" hash-for-method="OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)">OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC003_OneWayTrip" class="method navigator-link" hash-for-method="OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, &#039;, 12, 30, 253, invalidName)">OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, ', 12, 30, 253, invalidName)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC004_RoundTrip" class="method navigator-link" hash-for-method="RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)">RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC004_RoundTrip" class="method navigator-link" hash-for-method="RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)">RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC004_RoundTrip" class="method navigator-link" hash-for-method="RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, &#039;, 12, 30, 253, invalidName)">RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, ', 12, 30, 253, invalidName)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TC007_ManageBookings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToItenaryTest(9042281169, Nethaji@28, valid)">
+                  </a> <!-- AddToItenaryTest(9042281169, Nethaji@28, valid) -->
+                  <span class="method-name">AddToItenaryTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;css-1dbjc4n r-1awozwy r-1lz4bg0 r-z2wwpe r-1phboty r-rs99b7 r-1loqt21 r-18u37iz r-1777fci r-15d164r r-ah5dr5 r-1otgn73 r-13qz1uu&quot; data-focusable=&quot;true&quot; tabindex=&quot;0&quot; style=&quot;background-color: rgb(249, 249, 249); padding: 9px 20px;&quot;&gt;...&lt;/div&gt; is not clickable at point (423, 427). Other element would receive the click: &lt;div class=&quot;css-1dbjc4n r-1awozwy r-1pi2tsx r-1777fci r-1d2f490 r-u8s1d r-ipm5af r-13qz1uu r-184en5c&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=127.0.6533.89)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d78d0b8b6dfbec8451a203e9ffa3e856, clickElement {id=f.C034ECF65A291DA979058E3BA04B7914.d.1DF7695C8922DF334F37CAC2964287F5.e.492}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62666}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62666/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d78d0b8b6dfbec8451a203e9ffa3e856)] -&gt; xpath: //div[contains(@class,&apos;r-rs99b7 r-1loqt21 r-18u37iz r-1777fci r-15d164r&apos;)]]
+Session ID: d78d0b8b6dfbec8451a203e9ffa3e856
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.HomePage.clickAddYourItenary(HomePage.java:273)
+	at test.TC007_ManageBookings.AddToItenaryTest(TC007_ManageBookings.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ViewChangeAssistTest(9042281169, Nethaji@28, valid)">
+                  </a> <!-- ViewChangeAssistTest(9042281169, Nethaji@28, valid) -->
+                  <span class="method-name">ViewChangeAssistTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;css-1dbjc4n r-1awozwy r-1lz4bg0 r-z2wwpe r-1phboty r-rs99b7 r-1loqt21 r-18u37iz r-1777fci r-15d164r r-ah5dr5 r-1otgn73 r-13qz1uu&quot; data-focusable=&quot;true&quot; tabindex=&quot;0&quot; style=&quot;background-color: rgb(249, 249, 249); padding: 9px 20px;&quot;&gt;...&lt;/div&gt; is not clickable at point (423, 427). Other element would receive the click: &lt;div class=&quot;css-1dbjc4n r-1awozwy r-1pi2tsx r-1777fci r-1d2f490 r-u8s1d r-ipm5af r-13qz1uu r-184en5c&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=127.0.6533.89)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cfd53af37afe79bf28c43c36e2e9c06, clickElement {id=f.9B26FB755B21DD4CE6909C1273D1B300.d.D93612396882F1EA03A919196FD95E00.e.631}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62795/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6cfd53af37afe79bf28c43c36e2e9c06)] -&gt; xpath: //div[contains(@class,&apos;r-rs99b7 r-1loqt21 r-18u37iz r-1777fci r-15d164r&apos;)]]
+Session ID: 6cfd53af37afe79bf28c43c36e2e9c06
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.HomePage.clickAddYourItenary(HomePage.java:273)
+	at test.TC007_ManageBookings.ViewChangeAssistTest(TC007_ManageBookings.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TC003_OneWayTrip</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)">
+                  </a> <!-- OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear) -->
+                  <span class="method-name">OneWayTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,4242424242424242,Shiyam,12,23,253,invalidYear)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.89)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [470264eef75ce68d85a64e37235d9cbb, clickElement {id=f.6228770DF23DE7692749544D0A3F6E92.d.9101521E3C83F0318F4DCFAE02ABB801.e.902}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61817}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61817/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (470264eef75ce68d85a64e37235d9cbb)] -&gt; class name: tt_skip_link]
+Session ID: 470264eef75ce68d85a64e37235d9cbb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pages.AddOnsPage.clickAdClose(AddOnsPage.java:40)
+	at test.TC003_OneWayTrip.OneWayTripTest(TC003_OneWayTrip.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TC004_RoundTrip</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)">
+                  </a> <!-- RoundTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard) -->
+                  <span class="method-name">RoundTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,424242424242,Shiyam,12,30,253,invalidCard)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[text()=&apos;Login&apos;]&apos; (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.HomePage.clickLogin(HomePage.java:73)
+	at test.TC004_RoundTrip.RoundTripTest(TC004_RoundTrip.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Login&apos;]&quot;}
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a876f302900dc2ee225cf51c51ef2393, findElement {value=//div[text()=&apos;Login&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62077/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a876f302900dc2ee225cf51c51ef2393
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC007_ManageBookings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ManageBookingsTest(9042281169, Nethaji@28, valid)">
+                  </a> <!-- ManageBookingsTest(9042281169, Nethaji@28, valid) -->
+                  <span class="method-name">ManageBookingsTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC002_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logintest(9042281169, Nethaji@28, valid)">
+                  </a> <!-- Logintest(9042281169, Nethaji@28, valid) -->
+                  <span class="method-name">Logintest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logintest(9042281169, 452156, InvalidPwd)">
+                  </a> <!-- Logintest(9042281169, 452156, InvalidPwd) -->
+                  <span class="method-name">Logintest</span>
+                  <span class="parameters">(9042281169,452156,InvalidPwd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logintest(, &#039;&#039;, BlankMob)">
+                  </a> <!-- Logintest(, '', BlankMob) -->
+                  <span class="method-name">Logintest</span>
+                  <span class="parameters">(,'',BlankMob)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logintest(98656, Nethaji@28, InvalidMobile)">
+                  </a> <!-- Logintest(98656, Nethaji@28, InvalidMobile) -->
+                  <span class="method-name">Logintest</span>
+                  <span class="parameters">(98656,Nethaji@28,InvalidMobile)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Logintest(9865652536, 1234, Invalid)">
+                  </a> <!-- Logintest(9865652536, 1234, Invalid) -->
+                  <span class="method-name">Logintest</span>
+                  <span class="parameters">(9865652536,1234,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC003_OneWayTrip</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)">
+                  </a> <!-- OneWayTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard) -->
+                  <span class="method-name">OneWayTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,424242424242,Shiyam,12,30,253,invalidCard)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)">
+                  </a> <!-- OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid) -->
+                  <span class="method-name">OneWayTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,4242424242424242,Shiyam,12,30,253,Valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, &#039;, 12, 30, 253, invalidName)">
+                  </a> <!-- OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, ', 12, 30, 253, invalidName) -->
+                  <span class="method-name">OneWayTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,4242424242424242,',12,30,253,invalidName)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC005_CheckIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, supriyapalani28@gmail.com, valid)">
+                  </a> <!-- CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, supriyapalani28@gmail.com, valid) -->
+                  <span class="method-name">CheckInTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,W3A4AD,supriyapalani28@gmail.com,valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckInTest(9042281169, Nethaji@28, valid, , , Invalid)">
+                  </a> <!-- CheckInTest(9042281169, Nethaji@28, valid, , , Invalid) -->
+                  <span class="method-name">CheckInTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,,,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, , BlankEmail)">
+                  </a> <!-- CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, , BlankEmail) -->
+                  <span class="method-name">CheckInTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,W3A4AD,,BlankEmail)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckInTest(9042281169, Nethaji@28, valid, , supriyapalani28@gmail.com, BlankTicket)">
+                  </a> <!-- CheckInTest(9042281169, Nethaji@28, valid, , supriyapalani28@gmail.com, BlankTicket) -->
+                  <span class="method-name">CheckInTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,,supriyapalani28@gmail.com,BlankTicket)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC004_RoundTrip</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)">
+                  </a> <!-- RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid) -->
+                  <span class="method-name">RoundTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,4242424242424242,Shiyam,12,30,253,Valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)">
+                  </a> <!-- RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear) -->
+                  <span class="method-name">RoundTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,4242424242424242,Shiyam,12,23,253,invalidYear)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, &#039;, 12, 30, 253, invalidName)">
+                  </a> <!-- RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, ', 12, 30, 253, invalidName) -->
+                  <span class="method-name">RoundTripTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid,4242424242424242,',12,30,253,invalidName)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC006_FlightStatus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlightStatusTest(9042281169, Nethaji@28, valid)">
+                  </a> <!-- FlightStatusTest(9042281169, Nethaji@28, valid) -->
+                  <span class="method-name">FlightStatusTest</span>
+                  <span class="parameters">(9042281169,Nethaji@28,valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\USER\Desktop\GuviMini\Capstone_Spicejet\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://www.spicejet.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TC002_Login&quot;/&gt;
+      &lt;class name=&quot;test.TC003_OneWayTrip&quot;/&gt;
+      &lt;class name=&quot;test.TC004_RoundTrip&quot;/&gt;
+      &lt;class name=&quot;test.TC005_CheckIn&quot;/&gt;
+      &lt;class name=&quot;test.TC006_FlightStatus&quot;/&gt;
+      &lt;class name=&quot;test.TC007_ManageBookings&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'RoundTripTest')
+data.setCell(0, 2, 'test.TC004_RoundTrip')
+data.setCell(0, 3, 84266);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'RoundTripTest')
+data.setCell(1, 2, 'test.TC004_RoundTrip')
+data.setCell(1, 3, 82321);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'OneWayTripTest')
+data.setCell(2, 2, 'test.TC003_OneWayTrip')
+data.setCell(2, 3, 80469);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'OneWayTripTest')
+data.setCell(3, 2, 'test.TC003_OneWayTrip')
+data.setCell(3, 3, 77826);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'RoundTripTest')
+data.setCell(4, 2, 'test.TC004_RoundTrip')
+data.setCell(4, 3, 73607);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'OneWayTripTest')
+data.setCell(5, 2, 'test.TC003_OneWayTrip')
+data.setCell(5, 3, 71969);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'OneWayTripTest')
+data.setCell(6, 2, 'test.TC003_OneWayTrip')
+data.setCell(6, 3, 71379);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'RoundTripTest')
+data.setCell(7, 2, 'test.TC004_RoundTrip')
+data.setCell(7, 3, 40148);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AddToItenaryTest')
+data.setCell(8, 2, 'test.TC007_ManageBookings')
+data.setCell(8, 3, 18330);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'CheckInTest')
+data.setCell(9, 2, 'test.TC005_CheckIn')
+data.setCell(9, 3, 14391);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ViewChangeAssistTest')
+data.setCell(10, 2, 'test.TC007_ManageBookings')
+data.setCell(10, 3, 12894);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'CheckInTest')
+data.setCell(11, 2, 'test.TC005_CheckIn')
+data.setCell(11, 3, 12446);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'CheckInTest')
+data.setCell(12, 2, 'test.TC005_CheckIn')
+data.setCell(12, 3, 10933);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CheckInTest')
+data.setCell(13, 2, 'test.TC005_CheckIn')
+data.setCell(13, 3, 10911);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Logintest')
+data.setCell(14, 2, 'test.TC002_Login')
+data.setCell(14, 3, 8055);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'FlightStatusTest')
+data.setCell(15, 2, 'test.TC006_FlightStatus')
+data.setCell(15, 3, 7439);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ManageBookingsTest')
+data.setCell(16, 2, 'test.TC007_ManageBookings')
+data.setCell(16, 3, 6403);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Logintest')
+data.setCell(17, 2, 'test.TC002_Login')
+data.setCell(17, 3, 4735);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Logintest')
+data.setCell(18, 2, 'test.TC002_Login')
+data.setCell(18, 3, 4602);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Logintest')
+data.setCell(19, 2, 'test.TC002_Login')
+data.setCell(19, 3, 2416);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Logintest')
+data.setCell(20, 2, 'test.TC002_Login')
+data.setCell(20, 3, 2377);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC002_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC003_OneWayTrip</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC004_RoundTrip</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC005_CheckIn</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC006_FlightStatus</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC007_ManageBookings</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">64 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC002_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">3063 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logintest(9042281169, Nethaji@28, valid)</span>
+                <span class="method-start">24641 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">33516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">39260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logintest(9865652536, 1234, Invalid)</span>
+                <span class="method-start">63962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">69187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">74878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logintest(98656, Nethaji@28, InvalidMobile)</span>
+                <span class="method-start">90158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">93204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">100406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logintest(9042281169, 452156, InvalidPwd)</span>
+                <span class="method-start">115101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">120220 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">127387 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Logintest(, '', BlankMob)</span>
+                <span class="method-start">142674 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">145682 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC003_OneWayTrip</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">151492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)</span>
+                <span class="method-start">166272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">244382 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">250167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OneWayTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)</span>
+                <span class="method-start">265701 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">337423 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">343242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, ', 12, 30, 253, invalidName)</span>
+                <span class="method-start">358252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">430527 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">436438 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OneWayTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)</span>
+                <span class="method-start">452078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">532919 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC004_RoundTrip</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">538930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 30, 253, Valid)</span>
+                <span class="method-start">554782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">639343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">645175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RoundTripTest(9042281169, Nethaji@28, valid, 424242424242, Shiyam, 12, 30, 253, invalidCard)</span>
+                <span class="method-start">664095 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">704475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">710094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, ', 12, 30, 253, invalidName)</span>
+                <span class="method-start">732112 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">814767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">820581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RoundTripTest(9042281169, Nethaji@28, valid, 4242424242424242, Shiyam, 12, 23, 253, invalidYear)</span>
+                <span class="method-start">837932 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">911790 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC005_CheckIn</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">917747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, supriyapalani28@gmail.com, valid)</span>
+                <span class="method-start">932794 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">945928 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">951580 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckInTest(9042281169, Nethaji@28, valid, , supriyapalani28@gmail.com, BlankTicket)</span>
+                <span class="method-start">967029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">982175 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">987810 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckInTest(9042281169, Nethaji@28, valid, W3A4AD, , BlankEmail)</span>
+                <span class="method-start">1003582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1015157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">1020790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckInTest(9042281169, Nethaji@28, valid, , , Invalid)</span>
+                <span class="method-start">1035430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1046960 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC006_FlightStatus</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">1052800 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FlightStatusTest(9042281169, Nethaji@28, valid)</span>
+                <span class="method-start">1067846 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1075869 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC007_ManageBookings</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">1081615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddToItenaryTest(9042281169, Nethaji@28, valid)</span>
+                <span class="method-start">1096580 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1115679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">1121487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ManageBookingsTest(9042281169, Nethaji@28, valid)</span>
+                <span class="method-start">1137583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1144732 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser(Chrome, https://www.spicejet.com/)</span>
+                <span class="method-start">1150487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ViewChangeAssistTest(9042281169, Nethaji@28, valid)</span>
+                <span class="method-start">1165266 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">1178870 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
