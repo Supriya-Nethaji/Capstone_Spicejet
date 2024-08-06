@@ -23,12 +23,14 @@ public class HomePage extends ProjectSpecificationMethods {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	SoftAssert sassert = new SoftAssert();
 	
+	//Constructor
 	public HomePage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(xpath="//div[text()='Signup']") WebElement SignUp;
 	@FindBy(xpath = "//div[text()='Login']") WebElement Login;
 	@FindBy(xpath = "(//input[@type='number'])[1]") WebElement LoginMobileNumber;
@@ -62,12 +64,15 @@ public class HomePage extends ProjectSpecificationMethods {
 	@FindBy(xpath = "(//div[contains(@class,'r-1loqt21 r-18u37iz r-1777fci r-1w50u8q')])[2]") WebElement ViewChangeAssist;
 	
 	
+	//SignnUp
 	public SignUpPage clickSignUp()
 	{
 		SignUp.click();
 		return new SignUpPage(driver);
 	}
 	
+	
+	//Login
 	public HomePage clickLogin()
 	{
 		wait.until(ExpectedConditions.visibilityOf(Login));
@@ -124,6 +129,7 @@ public class HomePage extends ProjectSpecificationMethods {
 		return this;
 	}
 	
+	//One-way trip
 	public HomePage selectFromLocation()
 	{
 		FromLocation.click();
@@ -159,6 +165,7 @@ public class HomePage extends ProjectSpecificationMethods {
 		}*/
 
 	  }
+	
 	public FlightOptionsPage clickSearchFlight()
 	 {
 		wait.until(ExpectedConditions.invisibilityOf(expectedDateElement));
@@ -166,6 +173,7 @@ public class HomePage extends ProjectSpecificationMethods {
 		return new FlightOptionsPage(driver);
 	 }
 	
+	//Round trip
 	public void clickRoundTripRadioButton()
 	{
 		RoundTripRadioButton.click();
@@ -193,6 +201,7 @@ public class HomePage extends ProjectSpecificationMethods {
 	}*/
 	}
 	
+	//Check-In
 	public HomePage clickCheckIn()
 	{
 		checkIn.click();
@@ -241,6 +250,7 @@ public class HomePage extends ProjectSpecificationMethods {
 		}
 	}
 	
+	//Flight Status
 	public void clickFlightStatus()
 	{
 		FlightStatus.click();
@@ -255,6 +265,7 @@ public class HomePage extends ProjectSpecificationMethods {
 		sassert.assertAll();
 	}
 	
+	//Manage Bookings
 	public void clickManageBookings()
 	{
 		ManageBookings.click();
@@ -285,6 +296,7 @@ public class HomePage extends ProjectSpecificationMethods {
 		sassert.assertAll();
 	}
 	
+	//Change assist
 	public void clickViewChangeAssist() throws InterruptedException
 	{
 		ViewChangeAssist.click();

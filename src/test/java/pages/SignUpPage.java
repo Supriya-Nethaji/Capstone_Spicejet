@@ -18,12 +18,14 @@ public class SignUpPage extends ProjectSpecificationMethods {
 	
 	Actions act = new Actions(driver);
 	
+	//Constructor
 	public SignUpPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(id="first_name") WebElement firstname;
 	@FindBy(xpath = "(//select[contains(@class,'form-control')])[1]") WebElement Title;
 	@FindBy(id = "last_name") WebElement lastname;
@@ -39,6 +41,7 @@ public class SignUpPage extends ProjectSpecificationMethods {
 	@FindBy(id = "defaultCheck1") WebElement checkBox;
 	@FindBy(xpath ="//button[text()='Submit']") WebElement SubmitButton;
 	
+	//Methods
 	public SignUpPage switchWindow()
 	{
 		driver.getWindowHandle();

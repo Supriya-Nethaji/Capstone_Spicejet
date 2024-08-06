@@ -16,6 +16,7 @@ import base.ProjectSpecificationMethods;
 
 public class AddOnsPage extends ProjectSpecificationMethods{
 	
+	//constructor
 	public AddOnsPage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -23,10 +24,12 @@ public class AddOnsPage extends ProjectSpecificationMethods{
 	}
 	
 
+	//Element locators
 	@FindBy(xpath = "(//div[text()='Continue'])[3]") WebElement continueButton2;
 	@FindBy(className = "tt_skip_link") WebElement SkipLink;
 
 	
+	//Methods
 	public AddOnsPage clickContinueButton2()
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;

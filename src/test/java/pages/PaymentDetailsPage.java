@@ -18,12 +18,14 @@ public class PaymentDetailsPage extends ProjectSpecificationMethods{
 	
 	SoftAssert sassert = new SoftAssert();
 	
+	//Constructor
 	public PaymentDetailsPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(className = "card_number_iframe") WebElement cardNumFrame;
 	@FindBy(className = "name_on_card_iframe") WebElement cardNameFrame;
 	@FindBy(className = "card_exp_month_iframe") WebElement expMonthFrame;
@@ -40,7 +42,7 @@ public class PaymentDetailsPage extends ProjectSpecificationMethods{
 	@FindBy(id = "payment_form_card_name_error") WebElement nameErrorMessage;
 	@FindBy(id = "payment_form_card_expiry_error") WebElement expiryErrorMessage;
 	
-	
+	//Methods
 	public PaymentDetailsPage enterCardNumber(String cardNum)
 	{
 		driver.switchTo().frame(cardNumFrame);
