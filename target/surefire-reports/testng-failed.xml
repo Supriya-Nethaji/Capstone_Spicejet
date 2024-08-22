@@ -22,17 +22,17 @@
           <include name="setUp"/>
           <include name="LaunchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="OneWayTripTest" invocation-numbers="3"/>
+          <include name="OneWayTripTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- test.TC003_OneWayTrip -->
-      <class name="test.TC004_RoundTrip">
+      <class name="test.TC005_CheckIn">
         <methods>
+          <include name="CheckInTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="LaunchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="RoundTripTest" invocation-numbers="1"/>
         </methods>
-      </class> <!-- test.TC004_RoundTrip -->
+      </class> <!-- test.TC005_CheckIn -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
