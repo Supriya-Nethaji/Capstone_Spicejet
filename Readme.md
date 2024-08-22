@@ -25,7 +25,6 @@ The reason behind creating this project is that automating this site is challeng
 - WebDriverManager library - Automated driver management and other helper features for Selenium WebDriver in Java.
 
 ## Test case Code Example:
-- I have used constructor chaining here in order to access the methods of pages with single object creation.
 - We are using try/catch to handle the exception that occurs in between the process of executing a test case.
 - Finally, based on the validation if the test case is passed we report that test case as Pass/Fail in extent report.
 
